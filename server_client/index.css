@@ -1,0 +1,12 @@
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* This is an example of a pseudo-class.*/
+.parent:hover {
+    color: green;
+}
+

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Server and Client Interaction!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="parent">
+        <!– We are able to run this script without having to defer it
+        because by the time it completes, the element below loaded already ––>
+        <h1 id="server" onmouseover=changeColour()>1</h1>
+        <script src="index.js"></script>
+    </div>
+    <div class="child">
+        <h1 id="client">15</h1>
+    </div>
+</body>
+
+</html>
+
