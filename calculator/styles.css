@@ -1,0 +1,44 @@
+body {
+    background: rgba(0, 128, 0, 0.3);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbersContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputButton {
+    width: 150px;
+    height: 150px;
+    font-size: large;
+}
+
+.numberDisplay {
+    width: 450px;
+    height: 150px;
+    font-size: large;
+    background: rgba(151, 208, 241, 0.3);
+}
+
+.operationsContainer {
+    display: flex;
+    flex-direction: column;
+}
