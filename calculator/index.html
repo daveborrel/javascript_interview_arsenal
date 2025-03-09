@@ -10,35 +10,38 @@
         <div class="calculatorContainer">
             <div class="numbersContainer">
                 <div class="row">
-                    <div class="numberDisplay"></div>
+                    <div class="numberDisplay">
+                        <p class="numberDisplayText" id="numberDisplayText"> 
+                        </p>
+                    </div>
                 </div>
                 <div class="row">
-                    <button class="inputButton">1</button>
-                    <button class="inputButton">2</button>
-                    <button class="inputButton">3</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(1)">1</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(2)">2</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(3)">3</button>
                 </div>
                 <div class="row">
-                    <button class="inputButton">4</button>
-                    <button class="inputButton">5</button>
-                    <button class="inputButton">6</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(4)">4</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(5)">5</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(6)">6</button>
                 </div>
                 <div class="row">
-                    <button class="inputButton">7</button>
-                    <button class="inputButton">8</button>
-                    <button class="inputButton">9</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(7)">7</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(8)">8</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(9)">9</button>
                 </div>
                 <div class="row">
-                    <button class="inputButton">.</button>
-                    <button class="inputButton">0</button>
-                    <button class="inputButton">=</button>
+                    <button class="inputButton" onclick="calculator.addDecimal()">.</button>
+                    <button class="inputButton" onclick="calculator.renderDisplayValue(0)">0</button>
+                    <button class="inputButton" onclick="calculator.completeOperation()">=</button>
                 </div>
             </div>
             <div class="operationsContainer">
-                <button class="inputButton">Clear</button>
-                <button class="inputButton">/</button>
-                <button class="inputButton">x</button>
-                <button class="inputButton">-</button>
-                <button class="inputButton">+</button>
+                <button class="inputButton" onclick="calculator.clearDisplayValue()">Clear</button>
+                <button class="inputButton" onclick="calculator.useOperation('div')">/</button>
+                <button class="inputButton" onclick="calculator.useOperation('mul')">x</button>
+                <button class="inputButton" onclick="calculator.useOperation('sub')">-</button>
+                <button class="inputButton" onclick="calculator.useOperation('add')">+</button>
             </div>
         </div>
     </body>

@@ -1,5 +1,5 @@
 body {
-    background: rgba(0, 128, 0, 0.3);
+    background: rgba(23, 24, 23, 0.6);
 }
 
 #header {
@@ -34,8 +34,15 @@ body {
 .numberDisplay {
     width: 450px;
     height: 150px;
-    font-size: large;
     background: rgba(151, 208, 241, 0.3);
+}
+
+.numberDisplayText {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .operationsContainer {
