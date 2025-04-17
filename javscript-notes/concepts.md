@@ -39,3 +39,7 @@ function display_scopes() {
 
 display_scopes();
 ```
+
+### This
+
+The `this` keyword depends on how the function is invoked.
